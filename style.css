@@ -1,0 +1,384 @@
+/* GENERAL RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* NAVBAR SECTION */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background-color: #ffffff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    color: #111;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #555;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #007bff;
+}
+
+.btn-register {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 22px;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn-register:hover {
+    background-color: #0056b3;
+}
+
+/* BANNER (HERO) SECTION */
+.hero-banner {
+    background: url('banner.jpg') no-repeat center center/cover; /* Local Banner Image */
+    height: 75vh;
+    position: relative;
+}
+
+.hero-overlay {
+    background-color: rgba(0, 0, 0, 0.75); 
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.hero-content {
+    max-width: 750px;
+    color: white;
+}
+
+.hero-content h1 {
+    font-size: 52px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.hero-content h1 i {
+    color: #007bff; 
+    font-style: italic;
+}
+
+.hero-content p {
+    font-size: 17px;
+    margin-bottom: 30px;
+    color: #d1d5db;
+}
+
+.btn-hero-register {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 14px 32px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn-hero-register:hover {
+    background-color: #0056b3;
+}
+
+/* COMMON SECTION TITLES */
+.section-title {
+    text-align: center;
+    font-size: 34px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #111;
+}
+
+.section-subtitle {
+    text-align: center;
+    color: #666;
+    margin-bottom: 50px;
+    font-size: 15px;
+}
+
+/* MEET THE SPEAKERS SECTION */
+.speakers-section {
+    padding: 80px 10%;
+    background-color: #ffffff;
+}
+
+.speakers-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 40px;
+    max-width: 950px;
+    margin: 0 auto;
+}
+
+.speaker-card {
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    padding: 30px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.02);
+}
+
+.speaker-img {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 3px solid #007bff;
+}
+
+.track-label {
+    display: inline-block;
+    background-color: #eff6ff;
+    color: #007bff;
+    font-size: 11px;
+    font-weight: 600;
+    padding: 4px 12px;
+    border-radius: 20px;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+}
+
+.speaker-card h3 {
+    font-size: 20px;
+    color: #111;
+    margin-bottom: 6px;
+}
+
+.speaker-card p {
+    color: #6b7280;
+    font-size: 14px;
+}
+
+/* PRICING SECTION */
+.pricing-section {
+    padding: 80px 8%;
+    background-color: #f9fafb;
+}
+
+.pricing-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 30px;
+    max-width: 1050px;
+    margin: 0 auto;
+}
+
+.pricing-card {
+    background: white;
+    flex: 1;
+    padding: 40px 30px;
+    border-radius: 8px;
+    border: 1px solid #e5e7eb;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.02);
+}
+
+.pricing-card .plan-name {
+    font-size: 16px;
+    font-weight: 600;
+    color: #6b7280;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.pricing-card .price {
+    font-size: 40px;
+    font-weight: 800;
+    margin: 20px 0;
+    color: #111;
+}
+
+.features-list {
+    list-style: none;
+    text-align: left;
+    margin-bottom: 35px;
+}
+
+.features-list li {
+    padding: 12px 0;
+    color: #4b5563;
+    font-size: 14px;
+    border-bottom: 1px dashed #f3f4f6;
+}
+
+.btn-plan {
+    background-color: #f3f4f6;
+    color: #1f2937;
+    border: none;
+    padding: 12px;
+    width: 100%;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: auto;
+    transition: all 0.3s;
+}
+
+.btn-plan:hover {
+    background-color: #e5e7eb;
+}
+
+/* Highlighted (Pro) Plan Dark Background */
+.featured-plan {
+    background-color: #0f172a; 
+    color: white;
+    border: none;
+    transform: scale(1.03);
+    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.15);
+}
+
+.featured-plan .plan-name {
+    color: #38bdf8;
+}
+
+.featured-plan .price {
+    color: white;
+}
+
+.featured-plan .features-list li {
+    color: #9ca3af;
+    border-bottom: 1px dashed #1e293b;
+}
+
+.btn-pro {
+    background-color: #007bff;
+    color: white;
+}
+
+.btn-pro:hover {
+    background-color: #0056b3;
+}
+
+/* HACKATHON PLACEHOLDER SECTION */
+.challenge-section {
+    padding: 60px 10%;
+    background-color: #ffffff;
+}
+
+.challenge-box {
+    max-width: 800px;
+    margin: 0 auto;
+    background: #f8fafc;
+    border-left: 5px solid #007bff;
+    padding: 30px;
+    border-radius: 0 8px 8px 0;
+    text-align: left;
+}
+
+.challenge-box h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #111;
+}
+
+.challenge-box p {
+    color: #4b5563;
+    font-size: 15px;
+}
+
+/* FOOTER SECTION */
+.footer {
+    background-color: #111827;
+    color: #9ca3af;
+    padding: 50px 8% 30px 8%;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.footer-logo {
+    color: white;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.social-links a {
+    color: #9ca3af;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: white;
+}
+
+.footer-line {
+    border: 0;
+    height: 1px;
+    background: #1f2937;
+    margin-bottom: 20px;
+}
+
+.copyright {
+    text-align: center;
+    font-size: 13px;
+}
+
+/* RESPONSIVE DESIGN */
+@media(max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .speakers-grid {
+        grid-template-columns: 1fr;
+    }
+    .pricing-container {
+        flex-direction: column;
+        gap: 40px;
+    }
+    .featured-plan {
+        transform: scale(1);
+    }
+}
